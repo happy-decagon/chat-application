@@ -65,6 +65,9 @@ const ChatFeed = (props) => {
         <div className="chat-subtitle">
           {chat.people.map((person) => `${person.person.username} `)}
         </div>
+        <button type="submit" className="logOut-btn">
+          Logout
+        </button>
       </div>
       {renderMessages()}
       <div style={{ height: '100px' }} />
