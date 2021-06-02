@@ -162,12 +162,20 @@
 }
 
 .message-form {
+  position: fixed;
+  bottom: 15px;
+  width: 50%;
   overflow: hidden;
   border-radius: 6px;
   border: 1px solid #3b2a50;
   background-color: white;
 }
-
+@media (max-width: 900px) {
+  .message-form {
+    width: 100%;
+    bottom: 3px;
+  }
+}
 .message-input {
   height: 40px;
   width: calc(100% - 132px);
