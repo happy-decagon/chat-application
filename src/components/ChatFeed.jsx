@@ -61,10 +61,13 @@ const ChatFeed = (props) => {
   return (
     <div className="chat-feed">
       <div className="chat-title-container">
-        <div className="chat-title">{chat?.title}</div>
-        <div className="chat-subtitle">
-          {chat.people.map((person) => `${person.person.username} `)}
+        <div>
+          <div className="chat-title">{chat?.title}</div>
+          <div className="chat-subtitle">
+            {chat.people.map((person) => `${person.person.username} `)}
+          </div>
         </div>
+
         <button type="submit" className="logOut-btn">
           Logout
         </button>
